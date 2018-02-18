@@ -1,0 +1,60 @@
+html {
+    background-color: black;
+}
+p.colored {
+	color: #eb2144;
+}
+table, th, td {
+	border: 1px solid black;
+}
+.site-container {
+    width: 1001px;
+    margin: 0 auto;
+    background-color: white;
+    color: black;
+}
+.header {
+    margin: 0;
+    height: 200px;
+    color: white;
+    background-color: powderblue;
+    display: flex;
+}
+.logo {
+    height: 100%;
+    background-color: #ff0080;
+ 
+}
+.sign-and-date {
+    color: white;
+    background-color: #EB292B;
+    width: 67.6%;
+    height: 100%;
+    text-align: right;
+
+}
+.menu {
+    background-color: #a8260f;
+    text-align: center;
+    padding: 13px 0 15px 0;
+}
+
+.menu a {
+    height: 100%;
+    padding: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+}
+
+#content {
+	margin: 0 40px 0 40px;
+	font-size: 18px;
+}
+
+#footer {
+    color: white;
+    background-color: #EB292B;
+    text-align: center;
+    padding: 1px 0 10px 0;
+}
