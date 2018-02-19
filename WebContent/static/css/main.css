@@ -1,17 +1,35 @@
 html {
     background-color: black;
+ 	font-family: 'Ubuntu', sans-serif;
 }
 p.colored {
 	color: #eb2144;
 }
-table, th, td {
-	border: 1px solid black;
+table {
+	width: 100%;
 }
+table td {
+	font-size: 14px;
+	padding: 10px;	
+}
+
+table th {
+	background-color: #EB292B;
+	color: #FFF;
+	font-size: 16px;
+	padding: 10px;
+}
+tr:nth-child(odd) {
+	background-color: #f9b5b5;
+}
+
+
 .site-container {
     width: 1001px;
     margin: 0 auto;
     background-color: white;
     color: black;
+    padding: 0 0 40px 0;
 }
 .header {
     margin: 0;
@@ -22,37 +40,47 @@ table, th, td {
 }
 .logo {
     height: 100%;
-    background-color: #ff0080;
- 
 }
 .sign-and-date {
     color: white;
     background-color: #EB292B;
     width: 67.6%;
-    height: 100%;
+    height: auto;
     text-align: right;
-
+	padding: 35px 40px 0 0;
 }
 .menu {
     background-color: #a8260f;
     text-align: center;
-    padding: 13px 0 15px 0;
+    padding: 13px 0 13px 0;
 }
 
 .menu a {
     height: 100%;
-    padding: 20px;
+    padding: 14px 14px 14px 14px;
     text-transform: uppercase;
     color: white;
     font-size: 18px;
+    text-decoration: none;
 }
 
+.menu a:hover {
+	background-color: #EB292B;
+	color: white;
+}
+a.current {
+	background-color: white;
+	color: #EB292B;
+}
+
+
 #content {
-	margin: 0 40px 0 40px;
+	margin: 0 40px 50px 40px;
 	font-size: 18px;
 }
 
 #footer {
+	margin: 0 40px 0 40px;
     color: white;
     background-color: #EB292B;
     text-align: center;

@@ -22,6 +22,8 @@
 		<servlet-name>Home</servlet-name>
 		<url-pattern></url-pattern>
 	</servlet-mapping>
+	
+	
 	<servlet>
 		<display-name>Products</display-name>
 		<servlet-name>Products</servlet-name>
@@ -32,6 +34,17 @@
 		<url-pattern>/products</url-pattern>
 	</servlet-mapping>
 	<servlet>
+		<display-name>ProductDetails</display-name>
+		<servlet-name>ProductDetails</servlet-name>
+		<servlet-class>web.pages.Products</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductDetails</servlet-name>
+		<url-pattern>/products/*</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
 		<display-name>Orders</display-name>
 		<servlet-name>Orders</servlet-name>
 		<servlet-class>web.pages.Orders</servlet-class>
@@ -40,6 +53,17 @@
 		<servlet-name>Orders</servlet-name>
 		<url-pattern>/orders</url-pattern>
 	</servlet-mapping>
+	<servlet>
+		<display-name>OrderDetails</display-name>
+		<servlet-name>OrderDetails</servlet-name>
+		<servlet-class>web.pages.Orders</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>OrderDetails</servlet-name>
+		<url-pattern>/orders/*</url-pattern>
+	</servlet-mapping>
+	
+	
 	<servlet>
 		<display-name>Customers</display-name>
 		<servlet-name>Customers</servlet-name>
@@ -50,6 +74,17 @@
 		<url-pattern>/customers</url-pattern>
 	</servlet-mapping>
 	<servlet>
+		<display-name>CustomerDetails</display-name>
+		<servlet-name>CustomerDetails</servlet-name>
+		<servlet-class>web.pages.Customers</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CustomerDetails</servlet-name>
+		<url-pattern>/customers/*</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
 		<display-name>Offices</display-name>
 		<servlet-name>Offices</servlet-name>
 		<servlet-class>web.pages.Offices</servlet-class>
@@ -58,6 +93,17 @@
 		<servlet-name>Offices</servlet-name>
 		<url-pattern>/offices</url-pattern>
 	</servlet-mapping>
+	<servlet>
+		<display-name>OfficeDetails</display-name>
+		<servlet-name>OfficeDetails</servlet-name>
+		<servlet-class>web.pages.Offices</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>OfficeDetails</servlet-name>
+		<url-pattern>/offices/*</url-pattern>
+	</servlet-mapping>
+	
+	
 	<servlet>
 		<display-name>Employees</display-name>
 		<servlet-name>Employees</servlet-name>
@@ -68,6 +114,17 @@
 		<url-pattern>/employees</url-pattern>
 	</servlet-mapping>
 	<servlet>
+		<display-name>EmployeeDetails</display-name>
+		<servlet-name>EmployeeDetails</servlet-name>
+		<servlet-class>web.pages.Employees</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmployeeDetails</servlet-name>
+		<url-pattern>/employees/*</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
 		<display-name>Payments</display-name>
 		<servlet-name>Payments</servlet-name>
 		<servlet-class>web.pages.Payments</servlet-class>
@@ -76,61 +133,10 @@
 		<servlet-name>Payments</servlet-name>
 		<url-pattern>/payments</url-pattern>
 	</servlet-mapping>
-
-	<servlet>
-		<display-name>ProductDetails</display-name>
-		<servlet-name>ProductDetails</servlet-name>
-		<servlet-class>web.handlers.ProductDetails</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>ProductDetails</servlet-name>
-		<url-pattern>/products/*</url-pattern>
-	</servlet-mapping>
-
-	<servlet>
-		<display-name>OrderDetails</display-name>
-		<servlet-name>OrderDetails</servlet-name>
-		<servlet-class>web.handlers.OrderDetails</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>OrderDetails</servlet-name>
-		<url-pattern>/orders/*</url-pattern>
-	</servlet-mapping>
-
-	<servlet>
-		<display-name>CustomerDetails</display-name>
-		<servlet-name>CustomerDetails</servlet-name>
-		<servlet-class>web.handlers.CustomerDetails</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>CustomerDetails</servlet-name>
-		<url-pattern>/customers/*</url-pattern>
-	</servlet-mapping>
-
-	<servlet>
-		<display-name>OfficeDetails</display-name>
-		<servlet-name>OfficeDetails</servlet-name>
-		<servlet-class>web.handlers.OfficeDetails</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>OfficeDetails</servlet-name>
-		<url-pattern>/offices/*</url-pattern>
-	</servlet-mapping>
-
-	<servlet>
-		<display-name>EmployeeDetails</display-name>
-		<servlet-name>EmployeeDetails</servlet-name>
-		<servlet-class>web.handlers.EmployeeDetails</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>EmployeeDetails</servlet-name>
-		<url-pattern>/employees/*</url-pattern>
-	</servlet-mapping>
-
 	<servlet>
 		<display-name>PaymentDetails</display-name>
 		<servlet-name>PaymentDetails</servlet-name>
-		<servlet-class>web.handlers.PaymentDetails</servlet-class>
+		<servlet-class>web.pages.Payments</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>PaymentDetails</servlet-name>

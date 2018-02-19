@@ -6,6 +6,8 @@
 <meta charset="UTF-8">
 <title>${title} - WebGuideExam</title>
 <link href="/${appName}/static/css/main.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<link rel="icon" href="/${appName}/static/images/icon.png" type="image/png"> 
 </head>
 <body>
 
@@ -16,8 +18,7 @@
 					src="/${appName}/static/images/logo.png" alt="site-logo"> </a>
 			</div>
 			<div class="sign-and-date">
-				<p>Welcome to ${appName}
-				<p>
-					<fmt:formatDate value="${date}" pattern="HH:mm:ss dd/MM/yyyy" />
+				<h1>Welcome to ${appName}</h1>
+					<h3><fmt:formatDate value="${date}" pattern="HH:mm:ss dd/MM/yyyy" /></h3>
 			</div>
 		</div>

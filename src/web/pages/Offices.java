@@ -12,18 +12,35 @@ import models.Office;
 import service.OfficeService;
 
 public class Offices extends HttpServlet {
-	
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-		request.setAttribute("title", "Offices");
-		
-		OfficeService officeService = new OfficeService();
-		List<Office> offices = officeService.getAllOffices();
-		officeService.close();
-		
-		request.setAttribute("offices", offices);
-		request.getRequestDispatcher("/WEB-INF/pages/offices.jsp").forward(request, response);
-		
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+		String uri = request.getRequestURI();
+
+		if (uri.endsWith("offices")) {
+
+			request.setAttribute("title", "Offices");
+
+			OfficeService officeService = new OfficeService();
+			List<Office> offices = officeService.getAllOffices();
+			officeService.close();
+
+			request.setAttribute("offices", offices);
+			request.getRequestDispatcher("/WEB-INF/pages/offices.jsp").forward(request, response);
+
+		} else {
+
+			OfficeService officeService = new OfficeService();
+			String idParam = request.getParameter("id");
+			Office office = officeService.getOffice(idParam);
+			officeService.close();
+
+			request.setAttribute("title", "Office " + idParam);
+			request.setAttribute("office", office);
+			request.getRequestDispatcher("/WEB-INF/pages/single/officeDetails.jsp").forward(request, response);
+
+		}
 	}
 
 }
