@@ -18,7 +18,7 @@ public class Offices extends HttpServlet {
 
 		String uri = request.getRequestURI();
 
-		if (uri.endsWith("offices")) {
+		if (uri.endsWith("offices") || uri.endsWith("offices/")) {
 
 			request.setAttribute("title", "Offices");
 

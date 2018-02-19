@@ -18,7 +18,7 @@ public class Customers extends HttpServlet {
 
 		String uri = request.getRequestURI();
 
-		if (uri.endsWith("customers")) {
+		if (uri.endsWith("customers") || uri.endsWith("customers/")) {
 
 			request.setAttribute("title", "Customers");
 

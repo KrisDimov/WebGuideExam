@@ -18,7 +18,7 @@ public class Payments extends HttpServlet {
 
 		String uri = request.getRequestURI();
 
-		if (uri.endsWith("payments")) {
+		if (uri.endsWith("payments") || uri.endsWith("payments/")) {
 
 			request.setAttribute("title", "Payments");
 
