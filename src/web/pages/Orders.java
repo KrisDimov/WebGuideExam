@@ -44,7 +44,6 @@ public class Orders extends HttpServlet {
 			request.getRequestDispatcher("/WEB-INF/pages/single/orderDetails.jsp").forward(request, response);
 
 		}
-
 	}
 
 }

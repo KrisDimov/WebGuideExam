@@ -18,7 +18,7 @@ public class Products extends HttpServlet {
 
 		String uri = request.getRequestURI();
 
-		if (uri.endsWith("products")) {
+		if (uri.endsWith("products") || uri.endsWith("products/")) {
 
 			request.setAttribute("title", "Products");
 
