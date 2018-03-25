@@ -156,6 +156,14 @@ CREATE TABLE `orderdetails` (
   CONSTRAINT `orderdetails_ibfk_2` FOREIGN KEY (`productCode`) REFERENCES `products` (`productCode`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+/*Table structure for table `users` */
+
+CREATE TABLE `users` (
+`name` varchar(255) NOT NULL,
+`email` varchar(255),
+`password` varchar(255) NOT NULL,
+PRIMARY KEY(`email`));
+
 /*Data for the table `offices` */
 
 insert  into `offices`(`officeCode`,`city`,`phone`,`addressLine1`,`addressLine2`,`state`,`country`,`postalCode`,`territory`) values 
