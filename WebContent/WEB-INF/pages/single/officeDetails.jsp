@@ -3,10 +3,8 @@
 
 <structure:template>
 
-
-	<h1>Office ${office.code}</h1>
-	<a href="/${appName}/offices">back to all orders</a>
-
+	<p>
+		<a class="button" href="/${appName}/offices">back to all offices</a>
 	<table>
 		<tr>
 			<th>Attribute</th>

@@ -37,7 +37,7 @@ public class Customers extends HttpServlet {
 			customerService.close();
 
 			request.setAttribute("customer", customer);
-			request.setAttribute("title", "Customer " + idParam);
+			request.setAttribute("title", "Customer " + customer.toString());
 			request.getRequestDispatcher("/WEB-INF/pages/single/customerDetails.jsp").forward(request, response);
 
 		}

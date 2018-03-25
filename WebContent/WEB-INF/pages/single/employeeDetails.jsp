@@ -3,10 +3,8 @@
 
 <structure:template>
 
-
-	<h1>Employee - ${employee.number} ${employee.firstName} ${employee.lastName}</h1>
-	<a href="/${appName}/employees">back to all orders</a>
-
+	<p>
+		<a class="button" href="/${appName}/employees">back to all employees</a>
 	<table>
 		<tr>
 			<th>Attribute</th>

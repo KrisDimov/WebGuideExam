@@ -8,7 +8,7 @@ public class Customer {
 	private String lastName;
 	private String phone;
 	private String address;
-	
+
 	private String additionalAddress;
 	private String city;
 	private String state;
@@ -16,7 +16,7 @@ public class Customer {
 	private String country;
 	private String salesRepEmpNum;
 	private int creditLimit;
-	
+
 	public String getAdditionalAddress() {
 		return additionalAddress;
 	}
@@ -76,7 +76,7 @@ public class Customer {
 	public void setNumber(int number) {
 		this.number = number;
 	}
-	
+
 	public int getNumber() {
 		return number;
 	}
@@ -120,6 +120,9 @@ public class Customer {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	
-	
+
+	public String toString() {
+		return String.format("%d %s %s", number, firstName, lastName);
+	}
+
 }

@@ -3,8 +3,6 @@
 
 <structure:template>
 
-<h1>${title}</h1>
-
 	<c:if test="${not empty offices}">
 		<table>
 			<tr>
@@ -24,7 +22,7 @@
 					<td>${item.address}</td>
 					<td>${item.country}</td>
 					<td>${item.postCode}</td>
-					<td><a href="/${appName}/offices/view?id=${item.code}">View more</a></td>
+					<td align="center"><a class="button" href="/${appName}/offices/view?id=${item.code}">Details</a></td>
 				</tr>
 			</c:forEach>
 		</table>

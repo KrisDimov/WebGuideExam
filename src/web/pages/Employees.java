@@ -36,7 +36,7 @@ public class Employees extends HttpServlet {
 			Employee employee = employeeService.getEmployee(idParam);
 			employeeService.close();
 
-			request.setAttribute("title", "Employee " + idParam);
+			request.setAttribute("title", "Employee " + employee.toString());
 			request.setAttribute("employee", employee);
 			request.getRequestDispatcher("/WEB-INF/pages/single/employeeDetails.jsp").forward(request, response);
 

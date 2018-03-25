@@ -51,4 +51,8 @@ public class Payment {
 		this.customerName = customerName;
 	}
 	
+	public String toString() {
+		return "" + checkNumber;
+	}
+	
 }

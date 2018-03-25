@@ -3,9 +3,7 @@
 
 <structure:template>
 
-
-<h1>Customer - ${customer.number} ${customer.firstName} ${customer.lastName}</h1>
-<a href="/${appName}/customers">back to all customers</a>
+<p><a class="button" href="/${appName}/customers">back to all customers</a>
 
 <table>
 		<tr>

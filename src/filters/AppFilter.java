@@ -20,6 +20,7 @@ public class AppFilter implements Filter {
 		
 		request.setAttribute("date", new Date());
 		request.setAttribute("appName", Constants.APP_NAME);
+		request.setAttribute("title", "");
 		chain.doFilter(request, response);
 		
 	}

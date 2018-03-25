@@ -3,9 +3,6 @@
 
 <structure:template>
 
-
-<h1>${title}</h1>
-
 	<c:if test="${not empty payments}">
 		<table>
 			<tr>
@@ -21,7 +18,7 @@
 					<td>${item.checkNumber}</td>
 					<td>${item.paymentDate}</td>
 					<td>$${item.amount}</td>
-					<td><a href="/${appName}/payments/view?id=${item.checkNumber}">View more</a></td>
+					<td align="center"><a class="button" href="/${appName}/payments/view?id=${item.checkNumber}">Details</a></td>
 				</tr>
 			</c:forEach>
 		</table>

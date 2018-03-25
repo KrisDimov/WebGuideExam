@@ -3,9 +3,6 @@
 
 <structure:template>
 
-
-	<h1>Plovdiv Academy</h1>
-
 	<h2>Java - Explore the Enterprise - Web Exam</h2>
 <p class='colored'>February 04, 2018</p>
 <h3>Overview</h3>

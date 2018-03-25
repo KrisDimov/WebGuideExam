@@ -11,7 +11,7 @@ public class Home extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		request.setAttribute("title", "Home");
+		request.setAttribute("title", "Plovdiv Academy");
 		
 		request.getRequestDispatcher("/WEB-INF/pages/home.jsp").forward(request, response);
 		

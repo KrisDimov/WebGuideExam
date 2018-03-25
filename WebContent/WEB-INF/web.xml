@@ -5,6 +5,20 @@
 	id="WebApp_ID" version="2.5">
 	<display-name>WebGuideExam</display-name>
 	<filter>
+		<display-name>AdminFilter</display-name>
+		<filter-name>AdminFilter</filter-name>
+		<filter-class>filters.AdminFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>AdminFilter</filter-name>
+		<url-pattern>/orders</url-pattern>
+		<url-pattern>/orders/*</url-pattern>
+		<url-pattern>/customers</url-pattern>
+		<url-pattern>/customers/*</url-pattern>
+		<url-pattern>/payments</url-pattern>
+		<url-pattern>/payments/*</url-pattern>
+	</filter-mapping>
+	<filter>
 		<display-name>AppFilter</display-name>
 		<filter-name>AppFilter</filter-name>
 		<filter-class>filters.AppFilter</filter-class>
@@ -13,6 +27,35 @@
 		<filter-name>AppFilter</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
+
+	<servlet>
+		<display-name>Login</display-name>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>web.pages.admin.Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<display-name>Logout</display-name>
+		<servlet-name>Logout</servlet-name>
+		<servlet-class>web.handlers.Logout</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Logout</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<display-name>Register</display-name>
+		<servlet-name>Register</servlet-name>
+		<servlet-class>web.pages.admin.Register</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+
 	<servlet>
 		<display-name>Home</display-name>
 		<servlet-name>Home</servlet-name>
@@ -22,8 +65,6 @@
 		<servlet-name>Home</servlet-name>
 		<url-pattern></url-pattern>
 	</servlet-mapping>
-	
-	
 	<servlet>
 		<display-name>Products</display-name>
 		<servlet-name>Products</servlet-name>
@@ -42,8 +83,8 @@
 		<servlet-name>ProductDetails</servlet-name>
 		<url-pattern>/products/*</url-pattern>
 	</servlet-mapping>
-	
-	
+
+
 	<servlet>
 		<display-name>Orders</display-name>
 		<servlet-name>Orders</servlet-name>
@@ -62,8 +103,8 @@
 		<servlet-name>OrderDetails</servlet-name>
 		<url-pattern>/orders/*</url-pattern>
 	</servlet-mapping>
-	
-	
+
+
 	<servlet>
 		<display-name>Customers</display-name>
 		<servlet-name>Customers</servlet-name>
@@ -82,8 +123,8 @@
 		<servlet-name>CustomerDetails</servlet-name>
 		<url-pattern>/customers/*</url-pattern>
 	</servlet-mapping>
-	
-	
+
+
 	<servlet>
 		<display-name>Offices</display-name>
 		<servlet-name>Offices</servlet-name>
@@ -102,8 +143,8 @@
 		<servlet-name>OfficeDetails</servlet-name>
 		<url-pattern>/offices/*</url-pattern>
 	</servlet-mapping>
-	
-	
+
+
 	<servlet>
 		<display-name>Employees</display-name>
 		<servlet-name>Employees</servlet-name>
@@ -122,8 +163,8 @@
 		<servlet-name>EmployeeDetails</servlet-name>
 		<url-pattern>/employees/*</url-pattern>
 	</servlet-mapping>
-	
-	
+
+
 	<servlet>
 		<display-name>Payments</display-name>
 		<servlet-name>Payments</servlet-name>

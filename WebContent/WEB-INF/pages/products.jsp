@@ -3,8 +3,6 @@
 
 <structure:template>
 
-	<h1>${title}</h1>
-
 	<c:if test="${not empty products}">
 	<table>
 		<tr>
@@ -22,7 +20,7 @@
 				<td>${item.line}</td>
 				<td>${item.quantity}</td>
 				<td>$${item.price}</td>
-				<td><a href="/${appName}/products/view?id=${item.code}">View more</a></td>
+				<td align="center"><a class="button" href="/${appName}/products/view?id=${item.code}">Details</a></td>
 			</tr>
 		</c:forEach>
 	</table>

@@ -8,6 +8,7 @@
 <link href="/${appName}/static/css/main.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 <link rel="icon" href="/${appName}/static/images/icon.png" type="image/png"> 
+<script src="/${appName}/static/javascript/main.js"></script>
 </head>
 <body>
 

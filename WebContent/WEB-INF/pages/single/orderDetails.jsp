@@ -3,10 +3,8 @@
 
 <structure:template>
 
-
-	<h1>Order - ${order.number}</h1>
-	<span><a href="/${appName}/orders">back to all orders</a></span>
-
+	<p>
+		<a class="button" href="/${appName}/orders">back to all orders</a>
 	<table>
 		<tr>
 			<th>Attribute</th>

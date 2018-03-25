@@ -36,7 +36,7 @@ public class Offices extends HttpServlet {
 			Office office = officeService.getOffice(idParam);
 			officeService.close();
 
-			request.setAttribute("title", "Office " + idParam);
+			request.setAttribute("title", "Office " + office.toString());
 			request.setAttribute("office", office);
 			request.getRequestDispatcher("/WEB-INF/pages/single/officeDetails.jsp").forward(request, response);
 

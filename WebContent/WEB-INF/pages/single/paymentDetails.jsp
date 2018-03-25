@@ -3,10 +3,8 @@
 
 <structure:template>
 
-
-	<h1>Payment - ${payment.checkNumber}</h1>
-	<a href="/${appName}/payments">back to all orders</a>
-
+	<p>
+		<a class="button" href="/${appName}/payments">back to all payments</a>
 	<table>
 		<tr>
 			<th>Attribute</th>

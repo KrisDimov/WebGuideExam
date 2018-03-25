@@ -17,7 +17,7 @@ public class Orders extends HttpServlet {
 			throws ServletException, IOException {
 
 		String uri = request.getRequestURI();
-
+		
 		if (uri.endsWith("orders") || uri.endsWith("orders/")) {
 
 			request.setAttribute("title", "Orders");
@@ -39,7 +39,7 @@ public class Orders extends HttpServlet {
 
 			request.setAttribute("orderDetails", orderDetails);
 			request.setAttribute("order", order);
-			request.setAttribute("title", "Order " + idParam);
+			request.setAttribute("title", "Order " + order.toString());
 
 			request.getRequestDispatcher("/WEB-INF/pages/single/orderDetails.jsp").forward(request, response);
 

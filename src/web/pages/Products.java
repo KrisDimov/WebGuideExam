@@ -38,7 +38,7 @@ public class Products extends HttpServlet {
 			productService.close();
 
 			request.setAttribute("product", product);
-			request.setAttribute("title", "Product " + idParam);
+			request.setAttribute("title", "Product " + product.toString());
 
 			request.getRequestDispatcher("/WEB-INF/pages/single/productDetails.jsp").forward(request, response);
 
