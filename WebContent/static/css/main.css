@@ -67,6 +67,10 @@ tr:nth-child(odd) {
 	background-color: #EB292B;
 	color: white;
 }
+a.current {
+	background-color: white;
+	color: #a8260f;
+}
 a.button {
 	padding: 3px 7px;
 	color: #EB292B;

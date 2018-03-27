@@ -10,7 +10,7 @@
 <link rel="icon" href="/${appName}/static/images/icon.png" type="image/png"> 
 <script src="/${appName}/static/javascript/main.js"></script>
 </head>
-<body>
+<body onload='changeActivePageColor()'>
 
 	<div class="site-container">
 		<div class="header">
